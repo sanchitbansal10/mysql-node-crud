@@ -9,7 +9,8 @@ const connection=mysql.createConnection({
     host:'localhost',
     user:'root',
     password:'',
-    database:'node_crud'
+    database:'test',
+    port: '8443'
 });
 
 connection.connect(function(error){
@@ -89,6 +90,6 @@ app.get('/delete/:userId',(req, res) => {
 
 
 // Server Listening
-app.listen(3000, () => {
-    console.log('Server is running at port 3000');
+app.listen(8000, () => {
+    console.log('Server is running at port 8000');
 });
